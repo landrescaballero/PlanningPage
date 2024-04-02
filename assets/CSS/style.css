@@ -1,0 +1,240 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+header {
+    background-color: #34ccc5;
+    display: flex;
+    color: #fff;
+    padding: 0 75px;
+}
+
+/*header*/
+
+header .logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bold;
+    /* Added font-weight property */
+    align-items: center;
+    padding: 30px 0;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+}
+
+header .nav ul {
+    display: flex;
+}
+
+header .nav ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header .btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .btn button {
+    background-color: #4671cb;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    border-bottom: #fff 2px solid;
+}
+
+/*section About*/
+.about {
+    background-image: url('../images/banner-dec-right.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.about .background-2 {
+    background-image: url('../images/banner-dec-left.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.about .background-2 .content {
+    padding: 50px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .background-2 .content .text-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .background-2 .content .text-about .text-boxes {
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.about .background-2 .content .text-about .text-boxes .text-box {
+    padding: 5px 0;
+    padding-right: 75px;
+}
+
+.about .background-2 .content .title {
+    font-size: 40px;
+    font-weight: bolder;
+    background-image: linear-gradient(to left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about .background-2 .content .button button {
+    background-color: #34ccc5;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    border-bottom: #4671cb 2px solid;
+}
+
+/*info*/
+.info {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    margin: 0 75px;
+}
+
+.info .text-info {
+    -webkit-box-shadow: 0px 0px 28px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 28px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 28px -13px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.info .text-info .info-box {
+    margin-top: -30px;
+    text-align: center;
+}
+
+.info .text-info .info-box .number-img {
+    position: relative;
+    text-align: center;
+}
+
+.info .text-info .info-box .number-img img {
+    width: 100px;
+    height: auto;
+}
+
+.info .text-info .info-box .number-img .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.info .text-info .info-box .img {
+    margin: 30px 0;
+}
+
+.info .text-info .info-box .info-title {
+    margin: 30px 0;
+}
+
+.info .text-info .info-box .line {
+    border: 1px solid #caf0ed;
+    margin: 0 120px;
+}
+
+.info .text-info .info-box .info-text {
+    margin: 30px 0;
+    padding: 0 50px;
+}
+
+.info .stats .circle-container {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+}
+
+.info .stats .circle-container .circle {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#fc6b56 0 calc(var(--percent) * 1%), #dddddd 0);
+    box-sizing: border-box;
+}
+.info .stats .circle-container .circle h3{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 1;
+}
+.info .stats .circle-container .circle h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 1;
+}
+.info .stats .circle-container .circle::before{
+    content:'';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}   
+.info .stats .circle-container .circle::after{
+    content:'';
+    position: absolute;
+    inset:10px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}   
+    
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+footer span .azur {
+    color: #34ccc5;
+}
